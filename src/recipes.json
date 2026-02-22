@@ -208,7 +208,7 @@
       { "name": ["Rye Whiskey", "Bourbon"], "amount": 2, "unit": "oz" },
       { "name": "Angostura Bitters", "amount": 2, "unit": "dash" },
       { "name": "Dry Vermouth", "amount": 1, "unit": "oz" },
-      { "name": "Maraschino Liqeur", "amount": 0.25, "unit": "oz" }
+      { "name": "Maraschino Liqueur", "amount": 0.25, "unit": "oz" }
     ],
     "method": "built",
     "garnish": "Cherry",
@@ -259,7 +259,7 @@
     "ingredients": [
       { "name": "Sweet Vermouth", "amount": 1, "unit": "oz" },
       { "name": "Campari", "amount": 1, "unit": "oz" },
-      { "name": "Soda Water", "amount": 1, "unit": "arbitrary" }
+      { "name": "Soda Water", "amount": 1, "unit": "top" }
     ],
     "method": "built",
     "garnish": "Orange Peel",
@@ -271,7 +271,7 @@
     "ingredients": [
       { "name": "Sweet Vermouth", "amount": 1, "unit": "oz" },
       { "name": "Campari", "amount": 1, "unit": "oz" },
-      { "name": "Sparkling Wine", "amount": 1, "unit": "arbitrary" }
+      { "name": "Sparkling Wine", "amount": 1, "unit": "top" }
     ],
     "method": "built",
     "garnish": "Orange Peel",
@@ -297,9 +297,9 @@
       { "name": ["Whiskey", "Vodka", "White Rum", "Dark Rum", "Gin", "Tequila"], "amount": 2, "unit": "oz" },
       { "name": "Lemon Juice", "amount": 1, "unit": "oz" },
       { "name": "Simple Syrup", "amount": 0.5, "unit": "oz" },
-      { "name": "Egg Whites", "amount": 1, "unit": "arbitrary", "optional": true }
+      { "name": "Egg Whites", "amount": 1, "unit": "top", "optional": true }
     ],
-    "method": "shaken",
+    "method": ["shaken", "built"],
     "garnish": "Cherry",
     "ice": true,
     "type": "sour-style"
@@ -333,7 +333,7 @@
     "ingredients": [
       { "name": "Light Rum", "amount": 2, "unit": "oz" },
       { "name": "Grapefruit Juice", "amount": 1, "unit": "oz" },
-      { "name": "Maraschino Liqeur", "amount": 0.5, "unit": "oz" },
+      { "name": "Maraschino Liqueur", "amount": 0.5, "unit": "oz" },
       { "name": "Lime Juice", "amount": 0.5, "unit": "oz" }
     ],
     "method": "shaken",
@@ -403,7 +403,7 @@
       { "name": "Chambord", "amount": 0.5, "unit": "oz" },
       { "name": "Simple Syrup", "amount": 0.5, "unit": "oz" },
       { "name": "Lemon Juice", "amount": 0.5, "unit": "dash" },
-      { "name": "Egg Whites", "amount": 1, "unit": "arbitrary", "optional": true }
+      { "name": "Egg Whites", "amount": 1, "unit": "top", "optional": true }
     ],
     "method": "shaken",
     "garnish": "None",
@@ -417,7 +417,7 @@
       { "name": "Triple Sec", "amount": 0.75, "unit": "oz" },
       { "name": "Lime Juice", "amount": 1, "unit": "oz" },
       { "name": "Simple Syrup", "amount": 0.25, "unit": "oz" },
-      { "name": "Salted Rim", "amount": 1, "unit": "arbitrary", "optional": true }
+      { "name": "Salted Rim", "amount": 1, "unit": "top", "optional": true }
     ],
     "method": "shaken",
     "garnish": "Lime",
@@ -473,5 +473,201 @@
     "garnish": "Lime",
     "ice": [true, false],
     "type": "sour-style"
+  },
+  "Espresso Martini": {
+    "glass": ["martini"],
+    "ingredients": [
+      { "name": ["Vodka", "Reposado"], "amount": 1, "unit": "oz" },
+      { "name": "Coffee Liqueur", "amount": 1, "unit": "oz" },
+      { "name": "Espresso", "amount": 1, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.25, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "Coffee Beans",
+    "ice": false,
+    "type": "coffee-cream-egg"
+  },
+  "Alexander": {
+    "glass": ["martini", "coupe"],
+    "ingredients": [
+      { "name": "Brandy", "amount": 1, "unit": "oz" },
+      { "name": "brown Creme de Cacao", "amount": 1, "unit": "oz" },
+      { "name": "Heavy Cream", "amount": 1, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "None",
+    "ice": false,
+    "type": "coffee-cream-egg"
+  },
+  "Mudslide": {
+    "glass": ["martini", "coupe"],
+    "ingredients": [
+      { "name": ["Vodka", "Irish Whiskey"], "amount": 1, "unit": "oz" },
+      { "name": "Coffee Liqueur", "amount": 1, "unit": "oz" },
+      { "name": "Irish Cream", "amount": 1, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "None",
+    "ice": false,
+    "type": "coffee-cream-egg"
+  },
+  "Grasshopper": {
+    "glass": ["martini", "coupe"],
+    "ingredients": [
+      { "name": "green Creme de Cacao", "amount": 1, "unit": "oz" },
+      { "name": "Creme de Cacao", "amount": 1, "unit": "oz" },
+      { "name": "Heavy Cream", "amount": 1, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "Mint",
+    "ice": false,
+    "type": "coffee-cream-egg"
+  }, 
+  "Kamikazee": {
+    "glass": ["shot glass"],
+    "ingredients": [
+      { "name": "Vodka", "amount": 1, "unit": "oz" },
+      { "name": "Triple Sec", "amount": 0.5, "unit": "oz" },
+      { "name": "Lemon Juice", "amount": 0.25, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.25, "unit": "dash" }
+    ],
+    "method": "shaken",
+    "garnish": "None",
+    "ice": false,
+    "type": "shooter"
+  },
+  "Mission Accompalished": {
+    "glass": ["shot glass"],
+    "ingredients": [
+      { "name": "Vodka", "amount": 1, "unit": "oz" },
+      { "name": "Triple Sec", "amount": 0.5, "unit": "oz" },
+      { "name": "Lemon Juice", "amount": 0.25, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.25, "unit": "dash" },
+      { "name": "Grenadine", "amount": 1, "unit": "top"}
+    ],
+    "method": "shaken",
+    "garnish": "None",
+    "ice": false,
+    "type": "shooter"
+  },
+  "Blow Job": {
+    "glass": ["shot glass"],
+    "ingredients": [
+      { "name": "Kalhua", "amount": 1, "unit": "oz" },
+      { "name": "Creme de Cacao", "amount": 0.5, "unit": "oz" },
+      { "name": "Irish Cream", "amount": 0.5, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "Whipped Cream",
+    "ice": false,
+    "type": "shooter"
+  },
+  "German Chocolate Cake": {
+    "glass": ["shot glass"],
+    "ingredients": [
+      { "name": "Vodka", "amount": 1, "unit": "oz" },
+      { "name": "Hazelnut Liqueur", "amount": 1, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "Sugared Lemon",
+    "ice": false,
+    "type": "shooter"
+  },
+  "Scooby's Snacks": {
+    "glass": ["shot glass"],
+    "ingredients": [
+      { "name": "Coconut Rum", "amount": 0.5, "unit": "oz" },
+      { "name": "Melon Liqueur", "amount": 0.5, "unit": "oz" },
+      { "name": "Pineapple Juice", "amount": 0.25, "unit": "oz" },
+      { "name": "Heavy Cream", "amount": 0.25, "unit": "dash" }
+    ],
+    "method": "shaken",
+    "garnish": "None",
+    "ice": false,
+    "type": "shooter"
+  },
+  "Classic Martini": {
+    "glass": ["martini"],
+    "ingredients": [
+      { "name": ["Vodka", "Gin"], "amount": 2.5, "unit": "oz" },
+      { "name": "Dry Vermouth", "amount": 0.75, "unit": "oz" },
+      { "name": "Orange Bitters", "amount": 1, "unit": "top", "optional": true }
+    ],
+    "method": ["shaken", "built"],
+    "garnish": "Lemon Twist",
+    "ice": false,
+    "type": "martini"
+  },
+  "Dry Martini": {
+    "glass": ["martini"],
+    "ingredients": [
+      { "name": ["Vodka", "Gin"], "amount": 2.5, "unit": "oz" },
+      { "name": "Dry Vermouth", "amount": 0.5, "unit": "oz" },
+      { "name": "Orange Bitters", "amount": 1, "unit": "top", "optional": true }
+    ],
+    "method": ["shaken", "built"],
+    "garnish": "Lemon Twist",
+    "ice": false,
+    "type": "martini"
+  },
+  "Extra Dry Martini": {
+    "glass": ["martini"],
+    "ingredients": [
+      { "name": ["Vodka", "Gin"], "amount": 2.5, "unit": "oz" },
+      { "name": "Dry Vermouth", "amount": 0.25, "unit": "oz" },
+      { "name": "Orange Bitters", "amount": 1, "unit": "top", "optional": true }
+    ],
+    "method": ["shaken", "built"],
+    "garnish": "Lemon Twist",
+    "ice": false,
+    "type": "martini"
+  },
+  "Wet Martini": {
+    "glass": ["martini"],
+    "ingredients": [
+      { "name": ["Vodka", "Gin"], "amount": 2.5, "unit": "oz" },
+      { "name": "Dry Vermouth", "amount": 1, "unit": "oz" },
+      { "name": "Orange Bitters", "amount": 0.25, "unit": "oz", "optional": true }
+    ],
+    "method": ["shaken", "built"],
+    "garnish": "Lemon Twist",
+    "ice": false,
+    "type": "martini"
+  },
+  "Dirty Martini": {
+    "glass": ["martini"],
+    "ingredients": [
+      { "name": ["Vodka", "Gin"], "amount": 2.5, "unit": "oz" },
+      { "name": "Dry Vermouth", "amount": 0.5, "unit": "oz" },
+      { "name": "Olive Brine", "amount": 0.5, "unit": "oz" }
+    ],
+    "method": ["shaken", "built"],
+    "garnish": "Olive",
+    "ice": false,
+    "type": "martini"
+  },
+  "Perfect Martini": {
+    "glass": ["martini"],
+    "ingredients": [
+      { "name": ["Vodka", "Gin"], "amount": 2.5, "unit": "oz" },
+      { "name": "Dry Vermouth", "amount": 0.5, "unit": "oz" },
+      { "name": "Sweet Vermouth", "amount": 0.5, "unit": "oz"}
+    ],
+    "method": ["shaken", "built"],
+    "garnish": "Lemon Twist",
+    "ice": false,
+    "type": "martini"
+  },
+  "Vesper Martini": {
+    "glass": ["martini"],
+    "ingredients": [
+      { "name": ["Gin"], "amount": 2, "unit": "oz" },
+      { "name": "Dry Vermouth", "amount": 0.5, "unit": "oz" },
+      { "name": "Lillet Blanc", "amount": 0.5, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "Lemon Twist",
+    "ice": false,
+    "type": "martini"
   }
 }

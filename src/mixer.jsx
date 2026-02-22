@@ -6,9 +6,9 @@ import recipesData from "./recipes.json";
 // ─── Recipe Database ───────────────────────────────────────────────────────────
 const RECIPES = recipesData;
 
-const GLASSES = ["coupe", "single_rocks", "double_rocks", "martini", "collins", "champagne_flute", "copper_mug"];
-const GARNISHES = ["None", "Orange Peel", "Orange Slice", "Lemon Slice", "Coffee beans", "Whipped Cream", "Cinammon Stick", "Lemon Twist", "Lime", "Cherry", "Olive", "Mint Sprig"];
-const TYPES = ["highball", "old fashioned-style", "manhattan-style", "negroni-style", "sour-style", "coffe-cream-egg", "shooters", "martini", "sparkling", "hot drink"];
+const GLASSES = ["coupe", "single_rocks", "double_rocks", "martini", "collins", "champagne_flute", "copper_mug", "shot_glass"];
+const GARNISHES = ["None", "Orange Peel", "Orange Slice", "Lemon Slice", "Coffee beans", "Whipped Cream", "Cinammon Stick", "Lemon Twist", "Lime", "Cherry", "Olive", "Mint Sprig", "Orange Twist", "Mint"];
+const TYPES = ["highball", "old fashioned-style", "manhattan-style", "negroni-style", "sour-style", "coffe-cream-egg", "shooter", "martini", "sparkling", "hot drink"];
 
 const INGREDIENTS_LIST = {
   "Base Alcohol": [
@@ -25,6 +25,8 @@ const INGREDIENTS_LIST = {
     { name: "Light Rum", color: "#f5f5dc88" },
     { name: "Whiskey", color: "#8B451388" },
     { name: "Blanco Tequila", color: "#ffd70088" },
+    { name: "Irish Whiskey", color: "#8B451388" },
+    { name: "Coconut Rum", color: "#f5f5dc88" },
   ],
   "Fresh Juices": [
     { name: "Lime Juice", color: "#c8e66088" },
@@ -43,10 +45,15 @@ const INGREDIENTS_LIST = {
     { name: "Irish Cream", color: "#f0e68c99" },
     { name: "Creme de Cacao", color: "#8b451399" },
     { name: "Creme de Menthe", color: "#9370db99" },
-    { name: "Kahlua", color: "#f8e91288" },
+    { name: "Kalhua", color: "#f8e91288" },
     { name: "Benedictine", color: "#8b8b0088" },
     { name: "Chambord", color: "#8b451399" },
     { name: "Maraschino Liqueur", color: "#f5f5dc88" },
+    { name: "brown Creme de Cacao", color: "#8b451399" },
+    { name: "green Creme de Cacao", color: "#98fb9888" },
+    { name: "Hazelnut Liqueur", color: "#a0522d99" },
+    { name: "Melon Liqueur", color: "#98fb9888" },
+    { name: "Lillet Blanc", color: "#f5f5dc88" },
   ],
   "Digestivos and Aperitivos": [
     { name: "Campari", color: "#c0000099" },
@@ -88,6 +95,9 @@ const INGREDIENTS_LIST = {
   "Plant Products": [
     { name: "Mint Sprigs", color: "#98fb9888" },
     { name: "Mint", color: "#98fb9888" },
+  ],
+  "Coffee": [
+    { name: "Espresso", color: "#3b1a0888" },
   ],
   "Other": [
     { name: "Salted Rim", color: "#ffffff88" },
@@ -193,6 +203,7 @@ const GLASS_BOUNDS = {
   double_rocks: { path: [[20, 30], [80, 30], [80, 90], [20, 90]] },
   champagne_flute: { path: [[70, 10], [70, 40], [65, 44], [35, 44], [30, 40], [30, 10]] },
   copper_mug: { path: [[20, 20], [80, 20], [80, 80], [20, 80]] },
+  shot_glass: { path: [[30, 20], [70, 20], [65, 90], [35, 90]] },
 };
 
 function drawGlass(ctx, glassType, cx, cy, ingredients, fillProgress, glassImages, ice, iceProgress) {
@@ -481,6 +492,7 @@ export default function CocktailMixer() {
                   <option value="pcs">pcs</option>
                   <option value="tsp">tsp</option>
                   <option value="dash">dash</option>
+<option value="top">top</option>
                 </select>
               </div>
             </div>

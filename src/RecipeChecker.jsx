@@ -45,6 +45,9 @@ function RecipeChecker({ customRecipe, correctRecipe, onClose }) {
   const isGlassCorrect = Array.isArray(correctRecipe.glass)
     ? correctRecipe.glass.includes(customRecipe.glass)
     : customRecipe.glass === correctRecipe.glass;
+  const isMethodCorrect = Array.isArray(correctRecipe.method)
+    ? correctRecipe.method.includes(customRecipe.method)
+    : customRecipe.method === correctRecipe.method;
   const isGarnishCorrect = Array.isArray(correctRecipe.garnish)
     ? correctRecipe.garnish.includes(customRecipe.garnish)
     : customRecipe.garnish === correctRecipe.garnish;
@@ -58,6 +61,7 @@ function RecipeChecker({ customRecipe, correctRecipe, onClose }) {
       <div style={{ background: '#1a0d2e', padding: 24, borderRadius: 12, border: '1px solid #4a3a6a', color: '#e8e0d0', width: '80%', maxWidth: 500 }}>
         <h2 style={{ color: '#ffd700', letterSpacing: 2, marginBottom: 20 }}>Recipe Check</h2>
         <h3 style={{ color: isGlassCorrect ? 'lightgreen' : 'lightcoral' }}>Glass: {Array.isArray(correctRecipe.glass) ? correctRecipe.glass.join(' or ') : correctRecipe.glass} {!isGlassCorrect && `(You used ${customRecipe.glass})`}</h3>
+        <h3 style={{ color: isMethodCorrect ? 'lightgreen' : 'lightcoral' }}>Method: {Array.isArray(correctRecipe.method) ? correctRecipe.method.join(' or ') : correctRecipe.method} {!isMethodCorrect && `(You used ${customRecipe.method})`}</h3>
         <h3 style={{ color: isGarnishCorrect ? 'lightgreen' : 'lightcoral' }}>Garnish: {Array.isArray(correctRecipe.garnish) ? correctRecipe.garnish.join(' or ') : correctRecipe.garnish} {!isGarnishCorrect && `(You used ${customRecipe.garnish})`}</h3>
         <h3 style={{ color: isTypeCorrect ? 'lightgreen' : 'lightcoral' }}>Type: {correctRecipe.type} {!isTypeCorrect && `(You used ${customRecipe.type})`}</h3>
         <h3 style={{ color: isIceCorrect ? 'lightgreen' : 'lightcoral' }}>Ice: {Array.isArray(correctRecipe.ice) ? 'Optional' : (correctRecipe.ice ? 'Yes' : 'No')} {!isIceCorrect && `(You used ${customRecipe.ice ? 'Yes' : 'No'})`}</h3>
