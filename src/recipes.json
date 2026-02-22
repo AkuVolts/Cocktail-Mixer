@@ -199,7 +199,7 @@
     ],
     "method": "built",
     "garnish": "Cherry",
-    "ice": true,
+    "ice": false,
     "type": "manhattan-style"
   },
   "Brooklyn": {
@@ -212,7 +212,7 @@
     ],
     "method": "built",
     "garnish": "Cherry",
-    "ice": true,
+    "ice": false,
     "type": "manhattan-style"
   },
   "Vieux Carre": {
@@ -227,7 +227,68 @@
     ],
     "method": "built",
     "garnish": "Lemon Twist",
-    "ice": true,
+    "ice": false,
     "type": "manhattan-style"
+  },
+  "Classic Negroni": {
+    "glass": ["single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": "Gin", "amount": 1, "unit": "oz" },
+      { "name": "Sweet Vermouth", "amount": 1, "unit": "oz" },
+      { "name": "Campari", "amount": 1, "unit": "oz" }
+    ],
+    "method": "built",
+    "garnish": "Orange Peel",
+    "ice": true,
+    "type": "negroni-style"
+  },
+  "Boulevardier": {
+    "glass": ["single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": ["Rye Whiskey", "Bourbon"], "amount": 1, "unit": "oz" },
+      { "name": "Sweet Vermouth", "amount": 1, "unit": "oz" },
+      { "name": "Campari", "amount": 1, "unit": "oz" }
+    ],
+    "method": "built",
+    "garnish": "Orange Peel",
+    "ice": true,
+    "type": "negroni-style"
+  },
+  "Americano": {
+    "glass": ["single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": "Sweet Vermouth", "amount": 1, "unit": "oz" },
+      { "name": "Campari", "amount": 1, "unit": "oz" },
+      { "name": "Soda Water", "amount": 1, "unit": "arbitrary" }
+    ],
+    "method": "built",
+    "garnish": "Orange Peel",
+    "ice": true,
+    "type": "negroni-style"
+  },
+  "Negroni Sbagliato": {
+    "glass": ["single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": "Sweet Vermouth", "amount": 1, "unit": "oz" },
+      { "name": "Campari", "amount": 1, "unit": "oz" },
+      { "name": "Sparkling Wine", "amount": 1, "unit": "arbitrary" }
+    ],
+    "method": "built",
+    "garnish": "Orange Peel",
+    "ice": true,
+    "type": "negroni-style"
+  },
+  "Preakness": {
+    "glass": ["single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": "Bourbon", "amount": 1.5, "unit": "oz" },
+      { "name": "Sweet Vermouth", "amount": 0.75, "unit": "oz" },
+      { "name": "Benedictine", "amount": 0.25, "unit": "oz" },
+      { "name": "Angostura Bitters", "amount": 1, "unit": "dash" }
+    ],
+    "method": "built",
+    "garnish": "Orange Peel",
+    "ice": true,
+    "type": "negroni-style"
   }
 }
