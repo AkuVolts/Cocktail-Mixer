@@ -7,7 +7,7 @@ import recipesData from "./recipes.json";
 const RECIPES = recipesData;
 
 const GLASSES = ["coupe", "single_rocks", "double_rocks", "martini", "collins", "champagne_flute", "copper_mug", "shot_glass", "red_wine_glass", "white_wine_glass", "toddy"];
-const GARNISHES = ["None", "Orange Peel", "Orange Slice", "Lemon Slice", "Coffee beans", "Whipped Cream", "Cinammon Stick", "Lemon Twist", "Lime", "Cherry", "Olive", "Mint Sprig", "Orange Twist", "Mint"];
+const GARNISHES = ["None", "Orange Peel", "Orange Slice", "Lemon Slice", "Coffee Beans", "Whipped Cream", "Cinammon Stick", "Lemon Twist", "Lime", "Cherry", "Olive", "Mint Sprig", "Orange Twist", "Mint", "Sugared Lemon"];
 const TYPES = ["highball", "old fashioned-style", "manhattan-style", "negroni-style", "sour-style", "coffe-cream-egg", "shooter", "martini", "sparkling", "hot drink"];
 
 const INGREDIENTS_LIST = {
@@ -71,6 +71,7 @@ const INGREDIENTS_LIST = {
   "Bitters": [
     { name: "Angostura Bitters", color: "#3d000099" },
     { name: "Peychaud's Bitters", color: "#8b451399" },
+    { name: "Orange Bitters", color: "#ff8c0099" },
   ],
   "Fortified and Amortized Wines": [
     { name: "Sweet Vermouth", color: "#8b000099" },
@@ -98,6 +99,7 @@ const INGREDIENTS_LIST = {
   "Plant Products": [
     { name: "Mint Sprigs", color: "#98fb9888" },
     { name: "Mint", color: "#98fb9888" },
+    { name: "Dried Cloves", color: "#a0522d99" },
   ],
   "Coffee": [
     { name: "Espresso", color: "#3b1a0888" },
@@ -461,7 +463,7 @@ export default function CocktailMixer() {
           {/* Method */}
           <label style={{ fontSize: 11, color: "#7060a0", letterSpacing: 2, display: "block", marginBottom: 6 }}>METHOD</label>
           <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
-            {["shake", "built"].map(m => (
+            {["shaken", "built"].map(m => (
               <button key={m} onClick={() => updateRecipeField("method", m)}
                 style={{
                   flex: 1, padding: "8px", borderRadius: 8,
@@ -471,7 +473,7 @@ export default function CocktailMixer() {
                   color: recipe.method === m ? "#ffd700" : "#a090c0",
                   cursor: "pointer", fontSize: 13, textTransform: "capitalize",
                 }}>
-                {m === "shake" ? "🍶 Shaken" : "🏗️ Built"}
+                {m === "shaken" ? "🍶 Shaken" : "🏗️ Built"}
               </button>
             ))}
           </div>
@@ -498,7 +500,9 @@ export default function CocktailMixer() {
                   <option value="pcs">pcs</option>
                   <option value="tsp">tsp</option>
                   <option value="dash">dash</option>
-<option value="top">top</option>
+                  <option value="top">top</option>
+                  <option value="pinch">pinch</option>
+                  <option value="splash">splash</option>
                 </select>
               </div>
             </div>
