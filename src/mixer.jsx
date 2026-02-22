@@ -15,24 +15,50 @@ const INGREDIENTS_LIST = {
     { name: "Vodka", color: "#f5f5dc22" },
     { name: "Gin", color: "#e8e8e888" },
     { name: "White Rum", color: "#f5f5dc88" },
+    { name: "Dark Rum", color: "#8B451388" },
     { name: "Bourbon", color: "#a0522d99" },
     { name: "Tequila", color: "#ffd70088" },
   ],
-  "Sours": [
+  "Fresh Juices": [
     { name: "Lime Juice", color: "#c8e66088" },
     { name: "Lemon Juice", color: "#f0e68c88" },
     { name: "Orange Juice", color: "#ffa50088" },
     { name: "Cranberry Juice", color: "#dc143c88" },
+    { name: "Grapefruit Juice", color: "#ff634788" },
+  ],
+  "Liqueurs": [
+    { name: "Coffee Liqueur", color: "#3b1a0888" },
+    { name: "Peach Schnapps", color: "#ffdab988" },
+    { name: "Triple Sec", color: "#ffd70088" },
+  ],
+  "Sweeteners": [
+    { name: "Simple Syrup", color: "#ffffff88" },
+    { name: "Grenadine", color: "#ff450088" },
+    { name: "Honey Syrup", color: "#f8e91288" },
   ],
   "Bitters": [
     { name: "Angostura Bitters", color: "#3d000099" },
     { name: "Campari", color: "#c0000099" },
-    { name: "Sweet Vermouth", color: "#8b000099" },
   ],
-  "Other": [
-    { name: "Simple Syrup", color: "#ffffff88" },
-    { name: "Coffee Liqueur", color: "#3b1a0888" },
-    { name: "Espresso", color: "#1a0a0499" },
+  "Fortified and Amortized Wines": [
+    { name: "Sweet Vermouth", color: "#8b000099" },
+    { name: "Dry Vermouth", color: "#815d5d99" },
+    { name: "White/Blanc Vermouth", color: "#e6b3b399" },
+  ],
+  "Sodas": [
+    { name: "Ginger Beer", color: "#d2b48c88" },
+    { name: "Cola", color: "#3d2b1f88" },
+    { name: "Grapefruit Soda", color: "#ff634788" },
+    { name: "Soda Water", color: "#ffffff22" },
+    { name: "Sprite", color: "#f5f5f522" },
+  ],
+  "Milk and Egg Products": [
+    { name: "Milk", color: "#f5f5dc88" },
+    { name: "Egg Whites", color: "#ffffff88" },
+    { name: "Heavy Cream", color: "#c0c0c0da" },
+  ],
+  "Plant Products": [
+    { name: "Mint Sprigs", color: "#98fb9888" },
   ],
 };
 
@@ -122,7 +148,7 @@ function drawFrame(canvas, s, ingredients, glass, garnish, method, ice, glassIma
 
   const { glassTop } = drawGlass(ctx, glass, gx, gy, ingredients, fillProgress, glassImages, ice, iceProgress);
     if (garnish !== 'None' && (s.phase === 'done' || (s.phase === 'ice' && s.t === 1) || (s.phase === 'fill' && !ice))) {
-      drawGarnish(ctx, garnish, gx, gy, garnishImages, glassTop);
+      drawGarnish(ctx, garnish, garnishImages, gx, gy, glassTop);
     }
 }
 
@@ -218,8 +244,9 @@ function roundRect(ctx, x, y, w, h, r) {
   ctx.closePath();
 }
 
-function drawGarnish(ctx, garnishType, cx, cy, garnishImages, glassTop) {
-  const garnishImage = garnishImages[garnishType];
+function drawGarnish(ctx, garnish, garnishImages, cx, cy, glassTop) {
+  if (!garnish || garnish === 'None') return;
+  const garnishImage = garnishImages[garnish];
   if (garnishImage && garnishImage.complete) {
     const scale = 0.375;
     const w = garnishImage.width * scale;
@@ -414,9 +441,14 @@ export default function CocktailMixer() {
                 <input type="number" value={ing.amount}
                   onChange={e => updateIngredient(i, "amount", e.target.value)}
                   style={{ width: 60, background: "#1a1030", border: "1px solid #3a2a5a", borderRadius: 6, color: "#e8e0d0", fontSize: 13, padding: "4px 8px" }} />
-                <input value={ing.unit}
+                <select value={ing.unit}
                   onChange={e => updateIngredient(i, "unit", e.target.value)}
-                  style={{ width: 50, background: "#1a1030", border: "1px solid #3a2a5a", borderRadius: 6, color: "#e8e0d0", fontSize: 13, padding: "4px 8px" }} />
+                  style={{ width: 80, background: "#1a1030", border: "1px solid #3a2a5a", borderRadius: 6, color: "#e8e0d0", fontSize: 13, padding: "4px 8px" }}>
+                  <option value="oz">oz</option>
+                  <option value="pcs">pcs</option>
+                  <option value="tsp">tsp</option>
+                  <option value="dash">dash</option>
+                </select>
               </div>
             </div>
           ))}
