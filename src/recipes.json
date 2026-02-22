@@ -2,21 +2,21 @@
   "Madras": {
     "glass": "collins",
     "ingredients": [
-      { "name": "Vodka", "amount": 1.5, "unit": "oz", "color": "clear" },
-      { "name": "Orange Juice", "amount": 2, "unit": "oz", "color": "orange" },
-      { "name": "Cranberry Juice", "amount": 2, "unit": "oz", "color": "cranberry" }
+      { "name": "Vodka", "amount": 1.5, "unit": "oz" },
+      { "name": "Orange Juice", "amount": 2, "unit": "oz" },
+      { "name": "Cranberry Juice", "amount": 2, "unit": "oz" }
     ],
     "method": "built",
     "garnish": "Lime",
     "ice": true,
     "type": "highball"
   },
-  "Negroni": {
-    "glass": "single_rocks",
+  "Sea Breeze": {
+    "glass": "collins",
     "ingredients": [
-      { "name": "Gin", "amount": 1, "unit": "oz", "color": "#e8e8e888" },
-      { "name": "Campari", "amount": 1, "unit": "oz", "color": "#c0000099" },
-      { "name": "Sweet Vermouth", "amount": 1, "unit": "oz", "color": "#8b000099" }
+      { "name": "Vodka", "amount": 1.5, "unit": "oz" },
+      { "name": "Campari", "amount": 1, "unit": "oz" },
+      { "name": "Sweet Vermouth", "amount": 1, "unit": "oz" }
     ],
     "method": "stir",
     "garnish": "Orange peel",
@@ -26,9 +26,9 @@
   "Daiquiri": {
     "glass": "coupe",
     "ingredients": [
-      { "name": "White Rum", "amount": 2, "unit": "oz", "color": "#f5f5dc88" },
-      { "name": "Fresh Lime Juice", "amount": 1, "unit": "oz", "color": "#c8e66088" },
-      { "name": "Simple Syrup", "amount": 0.75, "unit": "oz", "color": "#ffffff88" }
+      { "name": "White Rum", "amount": 2, "unit": "oz" },
+      { "name": "Fresh Lime Juice", "amount": 1, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.75, "unit": "oz" }
     ],
     "method": "shake",
     "garnish": "Lime",
@@ -38,9 +38,9 @@
   "Old Fashioned": {
     "glass": "single rocks",
     "ingredients": [
-      { "name": "Bourbon", "amount": 2, "unit": "oz", "color": "#a0522d99" },
-      { "name": "Simple Syrup", "amount": 0.25, "unit": "oz", "color": "#ffffff88" },
-      { "name": "Angostura Bitters", "amount": 3, "unit": "dashes", "color": "#3d000099" }
+      { "name": "Bourbon", "amount": 2, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.25, "unit": "oz" },
+      { "name": "Angostura Bitters", "amount": 3, "unit": "dashes" }
     ],
     "method": "stir",
     "garnish": "Orange peel + Cherry",
@@ -50,9 +50,9 @@
   "Espresso Martini": {
     "glass": "martini",
     "ingredients": [
-      { "name": "Vodka", "amount": 1.75, "unit": "oz", "color": "#f5f5dc22" },
-      { "name": "Coffee Liqueur", "amount": 1, "unit": "oz", "color": "#3b1a0888" },
-      { "name": "Espresso", "amount": 1, "unit": "oz", "color": "#1a0a0499" }
+      { "name": "Vodka", "amount": 1.75, "unit": "oz" },
+      { "name": "Coffee Liqueur", "amount": 1, "unit": "oz" },
+      { "name": "Espresso", "amount": 1, "unit": "oz" }
     ],
     "method": "shake",
     "garnish": "3 Coffee Beans",
