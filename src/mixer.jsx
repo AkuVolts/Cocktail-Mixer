@@ -20,7 +20,8 @@ const INGREDIENTS_LIST = {
     { name: "Tequila", color: "#ffd70088" },
     { name: "Rye Whiskey", color: "#8B451388" },
     { name: "Reposado", color: "#ffd70088" },
-    { name: "mezcal", color: "#8b451388" },
+    { name: "Mezcal", color: "#8b451388" },
+    { name: "Brandy", color: "#8B451388" },
   ],
   "Fresh Juices": [
     { name: "Lime Juice", color: "#c8e66088" },
@@ -41,6 +42,7 @@ const INGREDIENTS_LIST = {
     { name: "Kahlua", color: "#f8e91288" },
     { name: "Benedictine", color: "#8b8b0088" },
     { name: "Chambord", color: "#8b451399" },
+    { name: "Maraschino Liqueur", color: "#f5f5dc88" },
   ],
   "Digestivos and Aperitivos": [
     { name: "Campari", color: "#c0000099" },
@@ -48,7 +50,7 @@ const INGREDIENTS_LIST = {
   ],
   "Sweeteners": [
     { name: "Simple Syrup", color: "#ffffff88" },
-    { name: "Grenadine", color: "#ff450088" },
+    { name: "Grenadine", color: "#ff0000e0" },
     { name: "Honey Syrup", color: "#f8e91288" },
     { name: "Agave Syrup", color: "#8b8b0088" },
     { name: "Sugar", color: "#ffffff88" },

@@ -189,5 +189,45 @@
     "garnish": "Lemon Twist",
     "ice": true,
     "type": "old fashioned-style"
+  },
+  "Classic Manhattan": {
+    "glass": ["coupe", "martini"],
+    "ingredients": [
+      { "name": ["Rye Whiskey", "Bourbon"], "amount": 2, "unit": "oz" },
+      { "name": "Angostura Bitters", "amount": 2, "unit": "dash" },
+      { "name": "Sweet Vermouth", "amount": 1, "unit": "oz" }
+    ],
+    "method": "built",
+    "garnish": "Cherry",
+    "ice": true,
+    "type": "manhattan-style"
+  },
+  "Brooklyn": {
+    "glass": ["coupe", "martini"],
+    "ingredients": [
+      { "name": ["Rye Whiskey", "Bourbon"], "amount": 2, "unit": "oz" },
+      { "name": "Angostura Bitters", "amount": 2, "unit": "dash" },
+      { "name": "Dry Vermouth", "amount": 1, "unit": "oz" },
+      { "name": "Maraschino Liqeur", "amount": 0.25, "unit": "oz" }
+    ],
+    "method": "built",
+    "garnish": "Cherry",
+    "ice": true,
+    "type": "manhattan-style"
+  },
+  "Vieux Carre": {
+    "glass": ["coupe", "martini"],
+    "ingredients": [
+      { "name": "Rye Whiskey", "amount": 1, "unit": "oz" },
+      { "name": "Brandy", "amount": 1, "unit": "oz" },
+      { "name": "Angostura Bitters", "amount": 1, "unit": "dash" },
+      { "name": "Sweet Vermouth", "amount": 1, "unit": "oz" },
+      { "name": "Peychaud's Bitters", "amount": 1, "unit": "dash" },
+      { "name": "Benedictine", "amount": 1, "unit": "tsp" }
+    ],
+    "method": "built",
+    "garnish": "Lemon Twist",
+    "ice": true,
+    "type": "manhattan-style"
   }
 }
