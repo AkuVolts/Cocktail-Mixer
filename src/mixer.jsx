@@ -6,7 +6,7 @@ import recipesData from "./recipes.json";
 // ─── Recipe Database ───────────────────────────────────────────────────────────
 const RECIPES = recipesData;
 
-const GLASSES = ["coupe", "single_rocks", "double_rocks", "martini", "collins", "champagne_flute", "copper_mug", "shot_glass", "red_wine_glass", "white_wine_glass"];
+const GLASSES = ["coupe", "single_rocks", "double_rocks", "martini", "collins", "champagne_flute", "copper_mug", "shot_glass", "red_wine_glass", "white_wine_glass", "toddy"];
 const GARNISHES = ["None", "Orange Peel", "Orange Slice", "Lemon Slice", "Coffee beans", "Whipped Cream", "Cinammon Stick", "Lemon Twist", "Lime", "Cherry", "Olive", "Mint Sprig", "Orange Twist", "Mint"];
 const TYPES = ["highball", "old fashioned-style", "manhattan-style", "negroni-style", "sour-style", "coffe-cream-egg", "shooter", "martini", "sparkling", "hot drink"];
 
@@ -209,6 +209,7 @@ const GLASS_BOUNDS = {
   shot_glass: { path: [[30, 20], [70, 20], [65, 90], [35, 90]] },
   red_wine_glass: { path: [[80, 15], [80, 50], [70, 57], [30, 57], [20, 50], [20, 15]] },
   white_wine_glass: { path: [[75, 10], [75, 40], [65, 50], [35, 50], [25, 40], [25, 10]]  },
+  toddy: { path: [[25, 25], [75, 25], [75, 85], [25, 85]]},
 };
 
 function drawGlass(ctx, glassType, cx, cy, ingredients, fillProgress, glassImages, ice, iceProgress) {

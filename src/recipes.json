@@ -708,5 +708,46 @@
     "garnish": "None",
     "ice": false,
     "type": "sparkling"
+  },
+  "Hot Toddy": {
+    "glass": ["toddy"],
+    "ingredients": [
+      { "name": ["Whiskey"], "amount": 1.5, "unit": "oz" },
+      { "name": "Lemon Juice", "amount": 0.25, "unit": "oz" },
+      { "name": "Honey Syrup", "amount": 0.5, "unit": "oz" },
+      { "name": "Dried Cloves", "amount": 3, "unit": "pcs"}
+    ],
+    "method": "built",
+    "garnish": ["Lemon Slice", "Cinammon Stick"],
+    "ice": false,
+    "type": "hot drink"
+  },
+  "Hot Buttered Rum": {
+    "glass": ["toddy"],
+    "ingredients": [
+      { "name": ["Dark Rum"], "amount": 2, "unit": "oz" },
+      { "name": "Unsalted Butter", "amount": 1, "unit": "oz" },
+      { "name": "Caramel Syrup", "amount": 0.5, "unit": "oz" },
+      { "name": "Honey Syrup", "amount": 0.5, "unit": "oz" },
+      { "name": "Ground Nutmeg", "amount": 1, "unit": "pinch" },
+      { "name": "Hot Water", "amount": 3, "unit": "top"}
+    ],
+    "method": "built",
+    "garnish": ["Lemon Slice", "Cinammon Stick"],
+    "ice": false,
+    "type": "hot drink"
+  },
+  "Irish Coffee": {
+    "glass": ["copper_mug"],
+    "ingredients": [
+      { "name": ["Irish Whiskey"], "amount": 1.5, "unit": "oz" },
+      { "name": "Sugar", "amount": 0.5, "unit": "oz"},
+      { "name": "Hot Coffee", "amount": 1, "unit": "top"},
+      { "name": "Heavy Cream", "amount": 1, "unit": "top", "optional": true}
+    ],
+    "method": "built",
+    "garnish": ["Whipped Cream"],
+    "ice": false,
+    "type": "hot drink"
   }
 }
