@@ -290,5 +290,188 @@
     "garnish": "Orange Peel",
     "ice": true,
     "type": "negroni-style"
+  },
+  "Sour": {
+    "glass": ["single_rocks", "double_rocks", "collins"],
+    "ingredients": [
+      { "name": ["Whiskey", "Vodka", "White Rum", "Dark Rum", "Gin", "Tequila"], "amount": 2, "unit": "oz" },
+      { "name": "Lemon Juice", "amount": 1, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.5, "unit": "oz" },
+      { "name": "Egg Whites", "amount": 1, "unit": "arbitrary", "optional": true }
+    ],
+    "method": "shaken",
+    "garnish": "Cherry",
+    "ice": true,
+    "type": "sour-style"
+  },
+  "French Martini": {
+    "glass": ["martini"],
+    "ingredients": [
+      { "name": "Vodka", "amount": 1.5, "unit": "oz" },
+      { "name": "Chambord", "amount": 0.5, "unit": "oz" },
+      { "name": "Pineapple Juice", "amount": 1.5, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "Lemon Twist",
+    "ice": false,
+    "type": "sour-style"
+  },
+  "Daiquiri": {
+    "glass": ["martini", "coupe"],
+    "ingredients": [
+      { "name": "White Rum", "amount": 2, "unit": "oz" },
+      { "name": "Lime Juice", "amount": 1, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.5, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "None",
+    "ice": false,
+    "type": "sour-style"
+  },
+  "Hemingway": {
+    "glass": ["martini", "coupe"],
+    "ingredients": [
+      { "name": "Light Rum", "amount": 2, "unit": "oz" },
+      { "name": "Grapefruit Juice", "amount": 1, "unit": "oz" },
+      { "name": "Maraschino Liqeur", "amount": 0.5, "unit": "oz" },
+      { "name": "Lime Juice", "amount": 0.5, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "None",
+    "ice": false,
+    "type": "sour-style"
+  },
+  "Mai Tai": {
+    "glass": ["collins", "single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": "Light Rum", "amount": 1, "unit": "oz" },
+      { "name": "Dark Rum", "amount": 1, "unit": "oz" },
+      { "name": "Triple Sec", "amount": 0.5, "unit": "oz" },
+      { "name": "Orgeat Syrup", "amount": 0.75, "unit": "oz" },
+      { "name": "Lime Juice", "amount": 1, "unit": "oz" },
+      { "name": "Angostura Bitters", "amount": 1, "unit": "dash" }
+    ],
+    "method": "shaken",
+    "garnish": ["Lime", "Mint"],
+    "ice": true,
+    "type": "sour-style"
+  },
+  "Cosmopolitan": {
+    "glass": ["martini", "coupe"],
+    "ingredients": [
+      { "name": "Vodka", "amount": 1.5, "unit": "oz" },
+      { "name": "Triple Sec", "amount": 0.5, "unit": "oz" },
+      { "name": "Cranberry Juice", "amount": 1, "unit": "oz" },
+      { "name": "Lime Juice", "amount": 0.5, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.5, "unit": "dash" }
+    ],
+    "method": "shaken",
+    "garnish": "Lemon Twist",
+    "ice": false,
+    "type": "sour-style"
+  },
+  "Sidecar": {
+      "glass": ["martini", "coupe"],
+      "ingredients": [
+        { "name": "Brandy", "amount": 2, "unit": "oz" },
+        { "name": "Triple Sec", "amount": 0.5, "unit": "oz" },
+        { "name": "Lemon Juice", "amount": 0.75, "unit": "oz" },
+        { "name": "Simple Syrup", "amount": 0.25, "unit": "dash" }
+      ],
+      "method": "shaken",
+      "garnish": "Orange Twist",
+      "ice": false,
+      "type": "sour-style"
+  },
+  "Pina Colada": {
+    "glass": ["collins", "single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": "White Rum", "amount": 2, "unit": "oz" },
+      { "name": "Coconut Cream", "amount": 1.5, "unit": "oz" },
+      { "name": "Pineapple Juice", "amount": 1.5, "unit": "oz" },
+      { "name": "Lime Juice", "amount": 0.5, "unit": "dash" }
+    ],
+    "method": "shaken",
+    "garnish": "Cherry",
+    "ice": true,
+    "type": "sour-style"
+  },
+  "Clover Club": {
+    "glass": ["martini", "coupe"],
+    "ingredients": [
+      { "name": "Gin", "amount": 1.5, "unit": "oz" },
+      { "name": "Chambord", "amount": 0.5, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.5, "unit": "oz" },
+      { "name": "Lemon Juice", "amount": 0.5, "unit": "dash" },
+      { "name": "Egg Whites", "amount": 1, "unit": "arbitrary", "optional": true }
+    ],
+    "method": "shaken",
+    "garnish": "None",
+    "ice": false,
+    "type": "sour-style"
+  },
+  "Margarita": {
+    "glass": ["martini", "coupe", "collins", "single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": "Blanco Tequila", "amount": 1.5, "unit": "oz" },
+      { "name": "Triple Sec", "amount": 0.75, "unit": "oz" },
+      { "name": "Lime Juice", "amount": 1, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.25, "unit": "oz" },
+      { "name": "Salted Rim", "amount": 1, "unit": "arbitrary", "optional": true }
+    ],
+    "method": "shaken",
+    "garnish": "Lime",
+    "ice": [true, false],
+    "type": "sour-style"
+  },
+  "Bee's Knees": {
+    "glass": ["martini", "coupe"],
+    "ingredients": [
+      { "name": "Gin", "amount": 2, "unit": "oz" },
+      { "name": "Lemon Juice", "amount": 0.75, "unit": "oz" },
+      { "name": "Honey Syrup", "amount": 0.75, "unit": "dash" },
+      { "name": "Peychaud's Bitters", "amount": 1, "unit": "dash" }
+    ],
+    "method": "shaken",
+    "garnish": "Lemon Twist",
+    "ice": false,
+    "type": "sour-style"
+  },
+  "Honeysuckle": {
+    "glass": ["martini", "coupe"],
+    "ingredients": [
+      { "name": "White Rum", "amount": 2, "unit": "oz" },
+      { "name": "Lime Juice", "amount": 0.75, "unit": "oz" },
+      { "name": "Honey Syrup", "amount": 0.75, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "None",
+    "ice": false,
+    "type": "sour-style"
+  },
+  "Between the Sheets": {
+    "glass": ["martini", "coupe"],
+    "ingredients": [
+      { "name": "Light Rum", "amount": 1, "unit": "oz" },
+      { "name": "Brandy", "amount": 1, "unit": "oz" },
+      { "name": "Triple Sec", "amount": 1, "unit": "oz" },
+      { "name": "Lemon Juice", "amount": 0.75, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "None",
+    "ice": false,
+    "type": "sour-style"
+  },
+  "Gimlet": {
+    "glass": ["martini", "coupe", "collins", "single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": "Gin", "amount": 2, "unit": "oz" },
+      { "name": "Lime Juice", "amount": 0.75, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.75, "unit": "oz" }
+    ],
+    "method": "shaken",
+    "garnish": "Lime",
+    "ice": [true, false],
+    "type": "sour-style"
   }
 }

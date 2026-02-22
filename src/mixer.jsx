@@ -22,6 +22,9 @@ const INGREDIENTS_LIST = {
     { name: "Reposado", color: "#ffd70088" },
     { name: "Mezcal", color: "#8b451388" },
     { name: "Brandy", color: "#8B451388" },
+    { name: "Light Rum", color: "#f5f5dc88" },
+    { name: "Whiskey", color: "#8B451388" },
+    { name: "Blanco Tequila", color: "#ffd70088" },
   ],
   "Fresh Juices": [
     { name: "Lime Juice", color: "#c8e66088" },
@@ -29,6 +32,7 @@ const INGREDIENTS_LIST = {
     { name: "Orange Juice", color: "#ffa50088" },
     { name: "Cranberry Juice", color: "#dc143c88" },
     { name: "Grapefruit Juice", color: "#ff634788" },
+    { name: "Pineapple Juice", color: "#ffc10788" },
   ],
   "Liqueurs": [
     { name: "Coffee Liqueur", color: "#3b1a0888" },
@@ -54,6 +58,7 @@ const INGREDIENTS_LIST = {
     { name: "Honey Syrup", color: "#f8e91288" },
     { name: "Agave Syrup", color: "#8b8b0088" },
     { name: "Sugar", color: "#ffffff88" },
+    { name: "Orgeat Syrup", color: "#f5deb388" },
   ],
   "Bitters": [
     { name: "Angostura Bitters", color: "#3d000099" },
@@ -63,6 +68,9 @@ const INGREDIENTS_LIST = {
     { name: "Sweet Vermouth", color: "#8b000099" },
     { name: "Dry Vermouth", color: "#815d5d99" },
     { name: "White/Blanc Vermouth", color: "#e6b3b399" },
+  ],
+  "Wines": [
+    { name: "Sparkling Wine", color: "#f5f5dc88" },
   ],
   "Sodas": [
     { name: "Ginger Beer", color: "#d2b48c88" },
@@ -75,10 +83,14 @@ const INGREDIENTS_LIST = {
     { name: "Milk", color: "#f5f5dc88" },
     { name: "Egg Whites", color: "#ffffff88" },
     { name: "Heavy Cream", color: "#c0c0c0da" },
+    { name: "Coconut Cream", color: "#f5f5f588" },
   ],
   "Plant Products": [
     { name: "Mint Sprigs", color: "#98fb9888" },
     { name: "Mint", color: "#98fb9888" },
+  ],
+  "Other": [
+    { name: "Salted Rim", color: "#ffffff88" },
   ],
 };
 
@@ -167,9 +179,10 @@ function drawFrame(canvas, s, ingredients, glass, garnish, method, ice, glassIma
   const iceProgress = phase === 'ice' ? s.t : (ice ? 1 : 0);
 
   const { glassTop } = drawGlass(ctx, glass, gx, gy, ingredients, fillProgress, glassImages, ice, iceProgress);
-    if (garnish !== 'None' && (s.phase === 'done' || (s.phase === 'ice' && s.t === 1) || (s.phase === 'fill' && !ice))) {
-      drawGarnish(ctx, garnish, garnishImages, gx, gy, glassTop);
-    }
+  // Draw garnish when animation is done or for non-animated recipes
+  if (garnish && garnish !== 'None' && (phase === 'done' || (phase === 'ice' && s.t >= 1))) {
+    drawGarnish(ctx, garnish, garnishImages, gx, gy, glassTop);
+  }
 }
 
 const GLASS_BOUNDS = {
