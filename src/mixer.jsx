@@ -18,6 +18,9 @@ const INGREDIENTS_LIST = {
     { name: "Dark Rum", color: "#8B451388" },
     { name: "Bourbon", color: "#a0522d99" },
     { name: "Tequila", color: "#ffd70088" },
+    { name: "Rye Whiskey", color: "#8B451388" },
+    { name: "Reposado", color: "#ffd70088" },
+    { name: "mezcal", color: "#8b451388" },
   ],
   "Fresh Juices": [
     { name: "Lime Juice", color: "#c8e66088" },
@@ -41,13 +44,14 @@ const INGREDIENTS_LIST = {
   ],
   "Digestivos and Aperitivos": [
     { name: "Campari", color: "#c0000099" },
-    { name: "Fernet-Branca", color: "#8b451399" },
+    { name: "Fernet Branca", color: "#8b451399" },
   ],
   "Sweeteners": [
     { name: "Simple Syrup", color: "#ffffff88" },
     { name: "Grenadine", color: "#ff450088" },
     { name: "Honey Syrup", color: "#f8e91288" },
-    { name: "Agave syrup", color: "#8b8b0088" },
+    { name: "Agave Syrup", color: "#8b8b0088" },
+    { name: "Sugar", color: "#ffffff88" },
   ],
   "Bitters": [
     { name: "Angostura Bitters", color: "#3d000099" },
@@ -72,6 +76,7 @@ const INGREDIENTS_LIST = {
   ],
   "Plant Products": [
     { name: "Mint Sprigs", color: "#98fb9888" },
+    { name: "Mint", color: "#98fb9888" },
   ],
 };
 

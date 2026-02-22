@@ -140,5 +140,54 @@
     "garnish": "Cherry",
     "ice": true,
     "type": "highball"
+  },
+  "Classic Old Fashioned": {
+    "glass": ["single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": ["Rye Whiskey", "Bourbon"], "amount": 2, "unit": "oz" },
+      { "name": "Angostura Bitters", "amount": 3, "unit": "dash" },
+      { "name": "Sugar", "amount": 1, "unit": "tsp" }
+    ],
+    "method": "built",
+    "garnish": ["Cherry", "Orange Peel"],
+    "ice": true,
+    "type": "old fashioned-style"
+  },
+  "Oaxacan Old Fashioned": {
+    "glass": ["single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": "Reposado", "amount": 1.5, "unit": "oz" },
+      { "name": "Mezcal", "amount": 0.5, "unit": "oz" },
+      { "name": "Agave Syrup", "amount": 0.25, "unit": "oz" },
+      { "name": "Angostura Bitters", "amount": 1, "unit": "dash" }
+    ],
+    "method": "built",
+    "garnish": "Orange Peel",
+    "ice": true,
+    "type": "old fashioned-style"
+  },
+  "Mint Julep": {
+    "glass": ["single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": "Bourbon", "amount": 2, "unit": "oz" },
+      { "name": "Mint Sprigs", "amount": 8, "unit": "pcs" },
+      { "name": "Simple Syrup", "amount": 0.25, "unit": "oz" }
+    ],
+    "method": "built",
+    "garnish": "Mint",
+    "ice": true,
+    "type": "old fashioned-style"
+  },
+  "Toronto": {
+    "glass": ["single_rocks", "double_rocks"],
+    "ingredients": [
+      { "name": "Rye Whiskey", "amount": 2, "unit": "oz" },
+      { "name": "Fernet Branca", "amount": 0.5, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.25, "unit": "oz" }
+    ],
+    "method": "built",
+    "garnish": "Lemon Twist",
+    "ice": true,
+    "type": "old fashioned-style"
   }
 }
