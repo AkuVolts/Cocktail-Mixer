@@ -669,5 +669,44 @@
     "garnish": "Lemon Twist",
     "ice": false,
     "type": "martini"
+  },
+  "Gin Fizz": {
+    "glass": ["collins"],
+    "ingredients": [
+      { "name": ["Gin"], "amount": 2, "unit": "oz" },
+      { "name": "Lemon Juice", "amount": 0.75, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.75, "unit": "oz" },
+      { "name": "Egg Whites", "amount": 1, "unit": "pcs"},
+      { "name": "Soda Water", "amount": 1, "unit": "top"}
+    ],
+    "method": ["shaken", "built"],
+    "garnish": "None",
+    "ice": false,
+    "type": "sparkling"
+  },
+  "Aperol Spritz": {
+    "glass": ["red_wine_glass", "white_wine_glass"],
+    "ingredients": [
+      { "name": ["Aperol"], "amount": 2, "unit": "oz" },
+      { "name": "Prosecco", "amount": 3, "unit": "oz" },
+      { "name": "Soda Water", "amount": 1, "unit": "splash"}
+    ],
+    "method": ["shaken", "built"],
+    "garnish": "Orange",
+    "ice": true,
+    "type": "sparkling"
+  },
+  "French 75": {
+    "glass": ["champagne_flute"],
+    "ingredients": [
+      { "name": ["Gin"], "amount": 1, "unit": "oz" },
+      { "name": "Lemon Juice", "amount": 0.5, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.5, "unit": "oz" },
+      { "name": "Champagne", "amount": 4, "unit": "oz"}
+    ],
+    "method": ["shaken", "built"],
+    "garnish": "None",
+    "ice": false,
+    "type": "sparkling"
   }
 }
