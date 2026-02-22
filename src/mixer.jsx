@@ -6,9 +6,9 @@ import recipesData from "./recipes.json";
 // ─── Recipe Database ───────────────────────────────────────────────────────────
 const RECIPES = recipesData;
 
-const GLASSES = ["coupe", "single_rocks", "double_rocks", "martini", "collins", "champagne_flute", "copper_mug"];
-const GARNISHES = ["None", "Orange Peel", "Orange Slice", "Lemon Slice", "Coffee beans", "Whipped Cream", "Cinammon Stick", "Lemon Twist", "Lime", "Cherry", "Olive", "Mint Sprig"];
-const TYPES = ["highball", "old fashioned-style", "manhattan-style", "negroni-style", "sour-style", "coffe-cream-egg", "shooters", "martini", "sparkling", "hot drink"];
+const GLASSES = ["coupe", "single_rocks", "double_rocks", "martini", "collins", "champagne_flute", "copper_mug", "shot_glass", "red_wine_glass", "white_wine_glass", "toddy"];
+const GARNISHES = ["None", "Orange Peel", "Orange Slice", "Lemon Slice", "Coffee Beans", "Whipped Cream", "Cinammon Stick", "Lemon Twist", "Lime", "Cherry", "Olive", "Mint Sprig", "Orange Twist", "Mint", "Sugared Lemon"];
+const TYPES = ["highball", "old fashioned-style", "manhattan-style", "negroni-style", "sour-style", "coffe-cream-egg", "shooter", "martini", "sparkling", "hot drink"];
 
 const INGREDIENTS_LIST = {
   "Base Alcohol": [
@@ -18,6 +18,15 @@ const INGREDIENTS_LIST = {
     { name: "Dark Rum", color: "#8B451388" },
     { name: "Bourbon", color: "#a0522d99" },
     { name: "Tequila", color: "#ffd70088" },
+    { name: "Rye Whiskey", color: "#8B451388" },
+    { name: "Reposado", color: "#ffd70088" },
+    { name: "Mezcal", color: "#8b451388" },
+    { name: "Brandy", color: "#8B451388" },
+    { name: "Light Rum", color: "#f5f5dc88" },
+    { name: "Whiskey", color: "#8B451388" },
+    { name: "Blanco Tequila", color: "#ffd70088" },
+    { name: "Irish Whiskey", color: "#8B451388" },
+    { name: "Coconut Rum", color: "#f5f5dc88" },
   ],
   "Fresh Juices": [
     { name: "Lime Juice", color: "#c8e66088" },
@@ -25,25 +34,54 @@ const INGREDIENTS_LIST = {
     { name: "Orange Juice", color: "#ffa50088" },
     { name: "Cranberry Juice", color: "#dc143c88" },
     { name: "Grapefruit Juice", color: "#ff634788" },
+    { name: "Pineapple Juice", color: "#ffc10788" },
   ],
   "Liqueurs": [
     { name: "Coffee Liqueur", color: "#3b1a0888" },
     { name: "Peach Schnapps", color: "#ffdab988" },
     { name: "Triple Sec", color: "#ffd70088" },
+    { name: "Amaretto", color: "#a0522d99" },
+    { name: "Cointreau", color: "#6b8e2399" },
+    { name: "Irish Cream", color: "#f0e68c99" },
+    { name: "Creme de Cacao", color: "#8b451399" },
+    { name: "Creme de Menthe", color: "#9370db99" },
+    { name: "Kalhua", color: "#f8e91288" },
+    { name: "Benedictine", color: "#8b8b0088" },
+    { name: "Chambord", color: "#8b451399" },
+    { name: "Maraschino Liqueur", color: "#f5f5dc88" },
+    { name: "brown Creme de Cacao", color: "#8b451399" },
+    { name: "green Creme de Cacao", color: "#98fb9888" },
+    { name: "Hazelnut Liqueur", color: "#a0522d99" },
+    { name: "Melon Liqueur", color: "#98fb9888" },
+    { name: "Lillet Blanc", color: "#f5f5dc88" },
+  ],
+  "Digestivos and Aperitivos": [
+    { name: "Campari", color: "#c0000099" },
+    { name: "Aperol", color: "#ff7f5088" },
+    { name: "Fernet Branca", color: "#8b451399" },
   ],
   "Sweeteners": [
     { name: "Simple Syrup", color: "#ffffff88" },
-    { name: "Grenadine", color: "#ff450088" },
+    { name: "Grenadine", color: "#ff0000e0" },
     { name: "Honey Syrup", color: "#f8e91288" },
+    { name: "Agave Syrup", color: "#8b8b0088" },
+    { name: "Sugar", color: "#ffffff88" },
+    { name: "Orgeat Syrup", color: "#f5deb388" },
   ],
   "Bitters": [
     { name: "Angostura Bitters", color: "#3d000099" },
-    { name: "Campari", color: "#c0000099" },
+    { name: "Peychaud's Bitters", color: "#8b451399" },
+    { name: "Orange Bitters", color: "#ff8c0099" },
   ],
   "Fortified and Amortized Wines": [
     { name: "Sweet Vermouth", color: "#8b000099" },
     { name: "Dry Vermouth", color: "#815d5d99" },
     { name: "White/Blanc Vermouth", color: "#e6b3b399" },
+  ],
+  "Wines": [
+    { name: "Sparkling Wine", color: "#f5f5dc88" },
+    { name: "Prosecco", color: "#f5f5dc88" },
+    { name: "Champagne", color: "#f5f5dc88" },
   ],
   "Sodas": [
     { name: "Ginger Beer", color: "#d2b48c88" },
@@ -56,9 +94,18 @@ const INGREDIENTS_LIST = {
     { name: "Milk", color: "#f5f5dc88" },
     { name: "Egg Whites", color: "#ffffff88" },
     { name: "Heavy Cream", color: "#c0c0c0da" },
+    { name: "Coconut Cream", color: "#f5f5f588" },
   ],
   "Plant Products": [
     { name: "Mint Sprigs", color: "#98fb9888" },
+    { name: "Mint", color: "#98fb9888" },
+    { name: "Dried Cloves", color: "#a0522d99" },
+  ],
+  "Coffee": [
+    { name: "Espresso", color: "#3b1a0888" },
+  ],
+  "Other": [
+    { name: "Salted Rim", color: "#ffffff88" },
   ],
 };
 
@@ -147,9 +194,10 @@ function drawFrame(canvas, s, ingredients, glass, garnish, method, ice, glassIma
   const iceProgress = phase === 'ice' ? s.t : (ice ? 1 : 0);
 
   const { glassTop } = drawGlass(ctx, glass, gx, gy, ingredients, fillProgress, glassImages, ice, iceProgress);
-    if (garnish !== 'None' && (s.phase === 'done' || (s.phase === 'ice' && s.t === 1) || (s.phase === 'fill' && !ice))) {
-      drawGarnish(ctx, garnish, garnishImages, gx, gy, glassTop);
-    }
+  // Draw garnish when animation is done or for non-animated recipes
+  if (garnish && garnish !== 'None' && (phase === 'done' || (phase === 'ice' && s.t >= 1))) {
+    drawGarnish(ctx, garnish, garnishImages, gx, gy, glassTop);
+  }
 }
 
 const GLASS_BOUNDS = {
@@ -160,6 +208,10 @@ const GLASS_BOUNDS = {
   double_rocks: { path: [[20, 30], [80, 30], [80, 90], [20, 90]] },
   champagne_flute: { path: [[70, 10], [70, 40], [65, 44], [35, 44], [30, 40], [30, 10]] },
   copper_mug: { path: [[20, 20], [80, 20], [80, 80], [20, 80]] },
+  shot_glass: { path: [[30, 20], [70, 20], [65, 90], [35, 90]] },
+  red_wine_glass: { path: [[80, 15], [80, 50], [70, 57], [30, 57], [20, 50], [20, 15]] },
+  white_wine_glass: { path: [[75, 10], [75, 40], [65, 50], [35, 50], [25, 40], [25, 10]]  },
+  toddy: { path: [[25, 25], [75, 25], [75, 85], [25, 85]]},
 };
 
 function drawGlass(ctx, glassType, cx, cy, ingredients, fillProgress, glassImages, ice, iceProgress) {
@@ -411,7 +463,7 @@ export default function CocktailMixer() {
           {/* Method */}
           <label style={{ fontSize: 11, color: "#7060a0", letterSpacing: 2, display: "block", marginBottom: 6 }}>METHOD</label>
           <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
-            {["shake", "built"].map(m => (
+            {["shaken", "built"].map(m => (
               <button key={m} onClick={() => updateRecipeField("method", m)}
                 style={{
                   flex: 1, padding: "8px", borderRadius: 8,
@@ -421,7 +473,7 @@ export default function CocktailMixer() {
                   color: recipe.method === m ? "#ffd700" : "#a090c0",
                   cursor: "pointer", fontSize: 13, textTransform: "capitalize",
                 }}>
-                {m === "shake" ? "🍶 Shaken" : "🏗️ Built"}
+                {m === "shaken" ? "🍶 Shaken" : "🏗️ Built"}
               </button>
             ))}
           </div>
@@ -448,6 +500,9 @@ export default function CocktailMixer() {
                   <option value="pcs">pcs</option>
                   <option value="tsp">tsp</option>
                   <option value="dash">dash</option>
+                  <option value="top">top</option>
+                  <option value="pinch">pinch</option>
+                  <option value="splash">splash</option>
                 </select>
               </div>
             </div>
