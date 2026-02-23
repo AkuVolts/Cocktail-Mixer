@@ -550,6 +550,20 @@
     "ice": false,
     "type": "shooter"
   },
+  "Green Tea": {
+    "glass": ["shot glass"],
+    "ingredients": [
+      { "name": "Peach Schnapps", "amount": 0.5, "unit": "oz" },
+      { "name": "Irish Whiskey", "amount": 0.5, "unit": "oz" },
+      { "name": "Lemon Juice", "amount": 0.25, "unit": "oz" },
+      { "name": "Simple Syrup", "amount": 0.25, "unit": "oz" },
+      { "name": "Citrus Soda", "amount": 1, "unit": "splash"}
+    ],
+    "method": "shaken",
+    "garnish": "None",
+    "ice": false,
+    "type": "shooter"
+  },
   "Blow Job": {
     "glass": ["shot glass"],
     "ingredients": [
