@@ -8,7 +8,7 @@ const RECIPES = recipesData;
 
 const GLASSES = ["coupe", "single_rocks", "double_rocks", "martini", "collins", "champagne_flute", "copper_mug", "shot_glass", "red_wine_glass", "white_wine_glass", "toddy"];
 const GARNISHES = ["None", "Orange Peel", "Orange Slice", "Lemon Slice", "Coffee Beans", "Whipped Cream", "Cinammon Stick", "Lemon Twist", "Lime", "Cherry", "Olive", "Mint Sprig", "Orange Twist", "Mint", "Sugared Lemon"];
-const TYPES = ["highball", "old fashioned-style", "manhattan-style", "negroni-style", "sour-style", "coffe-cream-egg", "shooter", "martini", "sparkling", "hot drink"];
+const TYPES = ["highball", "old fashioned-style", "manhattan-style", "negroni-style", "sour-style", "coffee-cream-egg", "shooter", "martini", "sparkling", "hot drink"];
 
 const INGREDIENTS_LIST = {
   "Base Alcohol": [
