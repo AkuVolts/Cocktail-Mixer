@@ -89,6 +89,7 @@ const INGREDIENTS_LIST = {
     { name: "Grapefruit Soda", color: "#b547ffb6" },
     { name: "Soda Water", color: "#FFFFFF1A" },
     { name: "Sprite", color: "#F5F5F51A" },
+    { name: "Citrus Soda", color: "#d3840dce" },
   ],
   "Milk and Egg Products": [
     { name: "Milk", color: "#FFFFFFCC" },
