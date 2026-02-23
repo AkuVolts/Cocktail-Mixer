@@ -61,7 +61,7 @@
       { "name": "Simple Syrup", "amount": 1, "unit": "oz" }
     ],
     "method": "built",
-    "garnish": "Lemon",
+    "garnish": "Lemon Slice",
     "ice": true,
     "type": "highball"
   },
