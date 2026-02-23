@@ -524,7 +524,7 @@
     "type": "coffee-cream-egg"
   }, 
   "Kamikazee": {
-    "glass": ["shot glass"],
+    "glass": ["shot_glass"],
     "ingredients": [
       { "name": "Vodka", "amount": 1, "unit": "oz" },
       { "name": "Triple Sec", "amount": 0.5, "unit": "oz" },
@@ -537,7 +537,7 @@
     "type": "shooter"
   },
   "Mission Accompalished": {
-    "glass": ["shot glass"],
+    "glass": ["shot_glass"],
     "ingredients": [
       { "name": "Vodka", "amount": 1, "unit": "oz" },
       { "name": "Triple Sec", "amount": 0.5, "unit": "oz" },
@@ -551,7 +551,7 @@
     "type": "shooter"
   },
   "Green Tea": {
-    "glass": ["shot glass"],
+    "glass": ["shot_glass"],
     "ingredients": [
       { "name": "Peach Schnapps", "amount": 0.5, "unit": "oz" },
       { "name": "Irish Whiskey", "amount": 0.5, "unit": "oz" },
@@ -565,7 +565,7 @@
     "type": "shooter"
   },
   "Blow Job": {
-    "glass": ["shot glass"],
+    "glass": ["shot_glass"],
     "ingredients": [
       { "name": "Kalhua", "amount": 1, "unit": "oz" },
       { "name": "Creme de Cacao", "amount": 0.5, "unit": "oz" },
@@ -577,7 +577,7 @@
     "type": "shooter"
   },
   "German Chocolate Cake": {
-    "glass": ["shot glass"],
+    "glass": ["shot_glass"],
     "ingredients": [
       { "name": "Vodka", "amount": 1, "unit": "oz" },
       { "name": "Hazelnut Liqueur", "amount": 1, "unit": "oz" }
@@ -588,7 +588,7 @@
     "type": "shooter"
   },
   "Scooby's Snacks": {
-    "glass": ["shot glass"],
+    "glass": ["shot_glass"],
     "ingredients": [
       { "name": "Coconut Rum", "amount": 0.5, "unit": "oz" },
       { "name": "Melon Liqueur", "amount": 0.5, "unit": "oz" },
