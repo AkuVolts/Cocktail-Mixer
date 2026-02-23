@@ -107,6 +107,7 @@ const INGREDIENTS_LIST = {
   ],
   "Other": [
     { name: "Salted Rim", color: "#FFFFFF80" },
+    { name: "Olive Brine", color: "#ADFF2F4D" },
   ],
 };
 
