@@ -676,8 +676,8 @@
     "glass": ["martini"],
     "ingredients": [
       { "name": ["Gin"], "amount": 2, "unit": "oz" },
-      { "name": "Dry Vermouth", "amount": 0.5, "unit": "oz" },
-      { "name": "Lillet Blanc", "amount": 0.5, "unit": "oz" }
+      { "name": "Vodka", "amount": 0.5, "unit": "oz" },
+      { "name": "Lillet Blanc", "amount": 0.25, "unit": "oz" }
     ],
     "method": "shaken",
     "garnish": "Lemon Twist",
